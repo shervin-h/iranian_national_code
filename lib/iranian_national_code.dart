@@ -4,3 +4,4 @@
 library iranian_national_code;
 
 export 'src/extensions_on_string.dart';
+export 'src/helpers.dart';

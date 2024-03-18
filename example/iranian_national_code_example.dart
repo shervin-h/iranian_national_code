@@ -1,7 +1,7 @@
 import 'package:iranian_national_code/iranian_national_code.dart';
 
 void main() {
-  // validating the national code
+  print('----- validating the national code -----');
   print(''.isValidNationalCode());
   print('chert'.isValidNationalCode());
   print('7730942860'.isValidNationalCode());
@@ -14,9 +14,43 @@ void main() {
   print('AlakiMalaki'.isValidNationalCode());
   print('87600#@_;52430'.isValidNationalCode());
 
-  // convert persian/farsi digits to english
+  print('----- convert persian/farsi digits to english -----');
   print('۱۲۳۴۵۶۷۸۹۰'.convertPersianToEnglishNumbers());
   print('۱۲۳۴۵#۶۷۸۹۰'.convertPersianToEnglishNumbers());
   print('۱۲۳۴۵JHkhdui۶۷۸۹۰'.convertPersianToEnglishNumbers());
   print('۱۲34۵۶۷۸۹۰'.convertPersianToEnglishNumbers());
+
+  print('----- generate national code -----');
+  final example1 = generateNationalCode();
+  print(example1);
+  print(example1.isValidNationalCode());
+
+  final example2 = generateNationalCode();
+  print(example2);
+  print(example2.isValidNationalCode());
+
+  final example3 = generateNationalCode();
+  print(example3);
+  print(example3.isValidNationalCode());
+
+  final example4 = generateNationalCode();
+  print(example4);
+  print(example4.isValidNationalCode());
+
+  print('----- generate round national code -----');
+  final example5 = generateRoundNationalCode();
+  print(example5);
+  print(example5.isValidNationalCode());
+
+  final example6 = generateRoundNationalCode();
+  print(example6);
+  print(example6.isValidNationalCode());
+
+  final example7 = generateRoundNationalCode();
+  print(example7);
+  print(example7.isValidNationalCode());
+
+  final example8 = generateRoundNationalCode();
+  print(example8);
+  print(example8.isValidNationalCode());
 }
