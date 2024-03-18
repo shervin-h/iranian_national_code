@@ -1,0 +1,16 @@
+name: iranian_national_code
+description: A library for validating Iranian NationalCode and converting Persian numbers to English.
+version: 1.0.0
+homepage: https://github.com/shervin-h/iranian_national_code
+repository: https://github.com/shervin-h/iranian_national_code
+issue_tracker: https://github.com/shervin-h/iranian_national_code/issues
+
+environment:
+  sdk: ^3.3.0
+
+dependencies:
+
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
